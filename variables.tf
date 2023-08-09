@@ -7,18 +7,9 @@ variable "source_disk" {
   description = "A reference to the disk used to create this snapshot."
   type        = string
 }
-variable "snapshot_description" {
-  description = "Description of disk snapshot"
-  type        = string
-}
 variable "storage_locations" {
   description = "Cloud Storage bucket storage location of the snapshot (regional or multi-regional)."
   type        = list(string)
-}
-variable "labels" {
-  description = "Labels to apply to this Snapshot."
-  type        = map(string)
-  default     = {}
 }
 variable "zone" {
   description = "A reference to the zone where the disk is hosted."
